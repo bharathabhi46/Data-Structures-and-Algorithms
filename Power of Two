@@ -1,0 +1,8 @@
+///4. POWER OF TWO
+function two(n) {
+  if (n < 1) {
+    return false;
+  }
+  return (n & (n - 1)) === 0;
+}
+console.log(two(4));
