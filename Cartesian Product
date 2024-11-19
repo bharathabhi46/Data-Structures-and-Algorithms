@@ -1,0 +1,10 @@
+function CartesianProduct(a1, a2) {
+  let car = [];
+  for (let i = 0; i < a1.length; i++) {
+    for (let j = 0; j < a2.length; j++) {
+      car.push([a1[i], a2[j]]);
+    }
+  }
+  return car;
+}
+console.log(CartesianProduct([1, 2], [3, 4, 5]));
