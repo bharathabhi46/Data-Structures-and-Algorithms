@@ -1,0 +1,10 @@
+function TowerOfHanoi(n, From, Destiny, Using) {
+  if (n === 1) {
+    console.log(`Move Disk 1 from ${From} to ${Destiny}`);
+    return;
+  }
+  TowerOfHanoi(n - 1, From, Using, Destiny);
+  console.log(`move Disk ${n} from ${From} to ${Destiny}`);
+  TowerOfHanoi(n - 1, Using, Destiny, From);
+}
+TowerOfHanoi(3, "A", "C", "B");
